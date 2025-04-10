@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fundraising Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #f4f9ff;
+      color: #003366;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0, 51, 102, 0.1);
+    }
+
+    h1 {
+      color: #003366;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 25px;
+    }
+
+    .btc-box {
+      background-color: #e0f0ff;
+      border: 2px dashed #007bff;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      font-family: monospace;
+      color: #007bff;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    .thanks {
+      margin-top: 20px;
+      font-weight: bold;
+      display: none;
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Support Our Cause</h1>
+    <p>Your donation helps us continue our mission. Thank you for your support!</p>
+    
+    <div class="btc-box">
+      Bitcoin Address: <br>
+      <span id="btc-address">bc1qc9f0mdyhm99284m7vpzjh7waygxdc6axxl94lx</span>
+    </div>
+
+    <button onclick="showThanks()">Donate</button>
+    <p class="thanks" id="thanks-msg">Thanks for your donation! 🙏</p>
+  </div>
+
+  <script>
+    function showThanks() {
+      document.getElementById("thanks-msg").style.display = "block";
+    }
+  </script>
+</body>
+</html>
